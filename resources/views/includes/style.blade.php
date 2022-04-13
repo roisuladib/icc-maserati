@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="{{ url('/project/vendor/bootstrap-4.6/css/bootstrap.css') }}" />   
+<link rel="stylesheet" href="{{ url('/project/vendor/lightbox2-2.11.3/dist/css/lightbox.css') }}" />
+<link rel="stylesheet" href="{{ url('/project/vendor/owl-carousel/owl.carousel.css') }}" />
+<link rel="stylesheet" href="{{ url('/project/vendor/owl-carousel/owl.theme.default.css') }}" />
+<link rel="stylesheet" href="{{ url('/project/vendor/splide/css/splide.min.css') }}" />
+<link rel="stylesheet" href="{{ url('/project/vendor/splide/css/themes/splide-default.min.css') }}" />
+<link rel="stylesheet" href="{{ url('/project/vendor/animate-css/animate.min.css') }}" />      
+<link rel="stylesheet" href="{{ url('/project/vendor/aos/aos.css') }}" />
+<link rel="stylesheet" href="{{ url('/project/style/main.css') }}" />

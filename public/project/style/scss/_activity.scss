@@ -1,0 +1,264 @@
+.maserati {
+   #activity {
+      header {
+         background: url('../images/activity/bg-banner.png');   
+         width: 100%;
+         height: 100vh;      
+         background-repeat: no-repeat;
+         background-size: cover;
+         color: #ffffff;
+         margin-top: -82.3px;   
+         padding-bottom: -200px;
+         padding-left: 0px;
+         padding-right: 0px;  
+         z-index: 1;  
+         h1 {                       
+            margin-top: 70vh !important;
+            font-size: 60px;
+            font-family: 'trans';
+         }
+         .hak {
+            margin-top: 23px;
+            margin-bottom: 86px;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 14px 40px 14px 40px;
+            color: #000;
+            border-radius: 30px;
+            background: #cacaca;
+            &:hover {
+               background: #c5c5c5;
+               cursor: pointer;
+            }
+            &:active {
+               outline: 0;
+               box-shadow: 1px solid #c5c5c5; 
+            }
+         }
+      }
+      .content {
+         background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%);
+         box-shadow: 0 0 100px 100px #060d1d;
+         .sunday {
+            h2 {
+               font-size: 35px;
+               font-weight: bold;
+               margin-bottom: 10px; 
+               max-width: 100%;
+               max-height: 100%;
+               // word-break: break-all;
+               text-overflow: ellipsis;
+               overflow: hidden;
+               display: -webkit-box;
+               -webkit-line-clamp: 3;
+               -webkit-box-orient: vertical;
+            }
+            span {                       
+               font-size: 20px;
+               font-weight: 300; 
+            }
+            p {
+               font-size: 25px;
+               font-weight: normal;  
+               margin-bottom: 0;
+               margin-top: 28px;   
+               max-width: 100%;
+               max-height: 100%;
+               // word-break: break-all;
+               text-overflow: ellipsis;
+               overflow: hidden;
+               display: -webkit-box;
+               -webkit-line-clamp: 7;
+               -webkit-box-orient: vertical;
+            }
+         }
+         .activity {
+            .title {
+               margin-top: 60px;
+               padding-left: 15px;
+               padding-right: 15px;
+               cursor: pointer;
+               h2 {
+                  border-radius: 45px;
+                  background: linear-gradient(to bottom, #c10202, #060d1d);
+                  font-size: 35px;
+                  font-weight: bold;
+                  padding: 20px 40px 20px 40px;                        
+                  margin-bottom: 37px;
+                  &:hover {
+                     box-shadow: 0 2px 25px 0 #fff;
+                  }
+               }      
+            }
+            .card {
+               text-align: center;
+               background: transparent !important;
+               border-radius: 35px;
+               border: solid 3px #fff;
+               margin-bottom: 50px;
+               &:hover {
+                  background-color: #8e8e8f85 !important;               
+                  transform: scale(1.05);                  
+                  box-shadow: 0px 7px 25px #8e8e8f85;
+                  cursor: pointer;
+                  transition-duration: 0.2s;
+               }
+               .card-header {
+                  border-bottom: none !important;
+                  background: transparent !important;
+                  padding: 30px 30px 0 30px;
+                  font-size: 30px;
+                  font-weight: bold;
+                  padding-bottom: 0;
+               }
+               .card-body {
+                  padding: 8px 30px 30px 30px;
+                  font-size: 25px;
+                  font-weight: normal;
+               }
+            }
+         }
+         .agenda {
+            background: #000;
+            .agenda-1 {                                
+               .scroll-agenda {   
+                  margin-top: 84px;            
+                  max-height: 433px;
+                  overflow-y: scroll;               
+                  .nav-pills {                  
+                     .nav-item {
+                        .nav-link {    
+                           background: none !important;  
+                           text-decoration: none !important;                                           
+                           color: #fff !important;
+                           .media {                          
+                              img {
+                                 height: 60px;
+                                 width: 60px;                     
+                              }
+                              .media-body {
+                                 p {
+                                    font-size: 22px;
+                                    font-weight: normal;
+                                    margin-bottom: 0;
+                                 }
+                              }
+                           }
+                           &:hover, &.active, &:active  {                                                                                         
+                              border-radius: 12px !important;                                                                        
+                              background: linear-gradient(to bottom, #060d1d, #008cc6) !important; 
+                           }                         
+                        }
+                     }
+                  }
+               }
+               .box-slider{
+                  margin-top: 84px;            
+                  padding: 40px 30px 10px 30px;
+                  border-radius: 27px;
+                  background: linear-gradient(to bottom, #060d1d, #008cc6);
+                  h2 {   
+                     font-size: 35px;
+                     font-weight: bold;                           
+                     margin-bottom: 20px;
+                  }
+                  p {
+                     font-size: 20px;
+                     font-weight: 300;
+                     margin-bottom: 32px;
+                  }
+                  iframe, img {
+                     border-radius: 12px;
+                  }      
+                  &:hover {
+                     box-shadow: 0 2px 25px 0 #fff;                  
+                     transform: scale(1);
+                  }
+                  .item {
+                     width: 100%;
+                     height: 190px;
+                     border-radius: 12px;
+                     overflow: hidden;
+                     position: relative;
+                     z-index: 1;
+                     &:hover, &:focus {
+                        .thumb {
+                           transform: scale(1);   
+                        }
+                     }
+                     img {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #ddd;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        transition: all 0.3s ease;
+                     }
+                  } 
+               }
+               hr {
+                  margin-top: 84px;
+                  margin-bottom: 45px;
+                  border: 1px solid #fff !important;
+               }
+            }
+            .agenda-2 {
+               h2 {
+                  margin-bottom: 30px;
+               }
+               .box-slider {
+                  .item {
+                     width: 100%;
+                     height: 230px;
+                     border-radius: 12px;
+                     overflow: hidden;
+                     position: relative;
+                     z-index: 1;
+                     &:hover, &:focus {
+                        .thumb {
+                           transform: scale(1.1);   
+                        }
+                     }
+                     img {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #ddd;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        transition: all 0.3s ease;
+                     }
+                  }             
+               }
+            }
+            hr {
+               margin-top: 10px;
+               margin-bottom: 45px;
+               border: 1px solid #fff !important;
+            }
+            .agenda-3 {
+               .splide {
+                  .splide__arrows {
+                     .splide__arrow--prev, 
+                     .splide__arrow--next {                     
+                        &:active {
+                           background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+                        }
+                     }            
+                  }
+               }  
+            }
+            .agenda-4 {
+               .container {
+                  padding-top: 45px;
+                  padding-bottom: 10px;
+                  iframe {
+                     border-radius: 12px;
+                  }               
+               }
+            }
+         }
+      }
+   }
+}

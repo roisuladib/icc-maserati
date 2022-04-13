@@ -1,0 +1,261 @@
+.maserati {
+   #home {      
+      header {   
+         .header {   
+            background: url('../images/home/bg-banner.jpg');   
+            width: 100%;
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #ffffff;
+            margin-top: -82.3px;   
+            padding-bottom: -200px;
+            padding-left: 0px;
+            padding-right: 0px;
+         
+            .hero {      
+               padding-top: 100px;      
+            }
+            h1 {
+               font-family: 'trans', serif;
+               font-size: 40px;
+               text-shadow: 4px 4px solid #000;      
+            }
+            .img-pendiri {    
+               background: #fff;  
+               border-radius: 100%;
+               border: 4px solid #fff;
+            }
+            .p-header {
+               font-size: 16px;           
+            }
+            .p-sub {
+               font-size: 12px;
+            }
+            .carousel-indicators{   
+               bottom: -10px;        
+               justify-content: center;   
+               li {                  
+                  width: 16px;
+                  height: 16px;
+                  border-radius: 100%;
+               }
+            }  
+         }    
+      }
+      .home-latar {
+         background: #030409;
+         .img-latar {
+            margin-bottom: -80px;
+            margin-left: -37px;
+         }     
+         p {
+            font-size: 18px;         
+            text-indent: 40px;
+            &:first-child {
+               margin-top: 40px;
+            }
+            &:last-child {
+            margin-top: 12px;
+            }
+         }
+      }
+      .home-benefit {
+         background: #fff;
+         color: #030409;
+         ul {
+            margin-top: 29px;
+            margin-bottom: 16px;
+            li {
+               font-size: 16px;
+               font-weight: 500;
+            }
+         }
+      }
+      .home-slide {
+         background: #030409;      
+         #owl-carousel-home {
+            .item {
+               width: 100%;
+               height: 230px;
+               border-radius: 12px;
+               overflow: hidden;
+               position: relative;
+               z-index: 1;
+               &:hover, &:focus {
+                  .thumb {
+                     transform: scale(1.1);   
+                  }
+               }
+               img {
+                  width: 100%;
+                  height: 100%;
+                  background-color: #ddd;
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  transition: all 0.3s ease;
+               }
+            } 
+            .owl-nav {
+               margin-top: -140px;            
+               margin-bottom: 100px;            
+               button.owl-prev {
+                  margin-left: -22px;
+                  float: left;
+                  color: #000;
+                  font-weight: 600;
+                  background: #cacaca; 
+                  opacity: 0.66 !important;
+                  padding: 0 14px !important;
+                  border-radius : 100%;
+                  font-size: 30px;
+                  margin-right: 20px;               
+                  &:hover {
+                     transform: scale(1.1);   
+                  }
+                  &:active {
+                     background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+                  }
+               }  
+               button.owl-next {
+                  margin-right: -22px;
+                  float: right;
+                  color: #000;
+                  font-weight: 600;
+                  background: #cacaca; 
+                  opacity: 0.66 !important;
+                  padding: 0 14px !important;
+                  border-radius : 100%;
+                  font-size: 30px;
+                  margin-left: 20px;  
+                  &:hover {
+                     transform: scale(1.1);   
+                  }
+                  &:active {
+                     background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+                  }
+               }
+            } 
+         }
+         .bg-slider {
+            width: 100%;
+            margin-top: -40px; 
+            margin-bottom: -21px;
+         }
+      }
+      .home-pendiri {      
+         background: url('../images/home/bg-tab.png');
+         height: auto;
+         background-repeat: no-repeat;
+         background-size: cover;
+         .nav-pills {
+            margin-top: 58px;
+            .nav-item {
+               .nav-link { 
+                  margin-left:auto;              
+                  margin-right:auto;                     
+                  img {
+                     max-width: 120px;
+                     height: auto;
+                  }  
+                  &.active {             
+                     // transform: scale(1.1);                                                  
+                     border-radius: 100%;                  
+                     background: rgba(255, 255, 255, 0.431);
+                     padding: 0;  
+                     box-shadow: 0 2px 25px 0  #fff !important;
+                  }              
+               }
+               .nav-induk {
+                  .ic-tab-utama {
+                     max-width: 170px;
+                     height: auto;                  
+                  }   
+                  &.active {             
+                     // transform: scale(1.1);                                                  
+                     border-radius: 100%;                  
+                     background: linear-gradient(to bottom, #c10202 0%, #060d1d 96%);
+                     padding: 6px;  
+                     box-shadow: 0 2px 25px 0  #fff !important;
+                  }  
+               }
+            }
+         }
+         .tab-mobile {
+            margin-top: 58px;
+            .nav-item {
+               .nav-link { 
+                  margin-left:auto !important;             
+                  margin-right:auto !important;                     
+                  img {
+                     max-width: 90px !important;
+                     height: auto !important;
+                  }  
+                  &.active {                                                                                               
+                     border-radius: 100%;                  
+                     background: rgba(255, 255, 255, 0.431);
+                     padding: 0 !important;  
+                     box-shadow: 0 2px 25px 0  #fff !important;
+                  }              
+               }
+               .nav-induk {
+                  .ic-tab-utama {
+                     max-width: 120px !important;
+                     height: auto !important;                  
+                  }   
+                  &.active {                               
+                     border-radius: 100% !important;                  
+                     background: linear-gradient(to bottom, #c10202 0%, #060d1d 96%) !important;
+                     padding: 6px !important;  
+                     box-shadow: 0 2px 25px 0  #fff !important;
+                  }  
+               }
+            }
+         }
+         .scroll-pendiri {
+            margin-top: 58px;
+            margin-bottom: 50px;
+            height: 600px;
+            padding: 20px;
+            overflow-y: scroll;
+            p {
+               font-size: 20px;
+               font-weight: 300;
+               line-height: 36px;
+            }
+            ol {
+               li {
+                  line-height: 36px;
+                  font-size: 20px;
+                  font-weight: 300;
+               }
+            }
+         }
+      }
+      .home-slider-video {    
+         .splide {
+            .splide__arrows {
+               .splide__arrow--prev, 
+               .splide__arrow--next {               
+                  &:active {
+                     background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+                  }
+               }            
+            }
+         }        
+         .container-fluid {
+            background: #000;
+            .container {
+               padding-top: 45px;
+               padding-bottom: 10px;
+               #carousel-bottom {
+                  iframe {
+                     border-radius: 12px !important;
+                  }
+               }
+            }         
+         }      
+      }
+   }
+}

@@ -1,0 +1,44 @@
+.content-admin {
+   .heading {
+      .title {
+         font-size: 26px;
+         font-weight: 600;
+         color: #000 !important;
+         margin-bottom: 2px;
+      }
+      .sub{
+         margin-bottom: 0;
+      }
+   }
+   #data {
+      .content {
+         .card {
+            margin-top: 50px;
+            border: none;
+            .card-body{
+               padding: 0;
+            }
+         }
+      }
+   }
+   #formInput {
+      .content {
+         .card {
+            margin-top: 50px;
+            border: none;
+            .card-body{
+               padding: 30px;
+            }
+         }
+      }
+   }
+}
+
+.thumb-container {
+   .delete-thumb {
+     display: block;
+     position: absolute;
+     top: -10px;
+     right: 0;
+   }
+ }

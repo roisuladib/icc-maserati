@@ -1,0 +1,1680 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'trans';
+  src: url("/project/fonts/transformer.ttf");
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 25px #ede1ff;
+          box-shadow: inset 0 0 25px #ede1ff;
+  border: 2px solid #ffffff !important;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8854d0;
+  border: 2px solid #ffffff !important;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4b6584;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff !important;
+  background: -webkit-gradient(linear, left bottom, left top, from(#060d1d), color-stop(152%, #008cc6));
+  background: linear-gradient(to top, #060d1d 0%, #008cc6 152%);
+}
+
+input, select {
+  color: #0C0D36;
+  border: 1px solid #f4f2ff !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  background-color: #f4f2ff !important;
+  height: 45px !important;
+  border-radius: 20px !important;
+}
+
+input:focus, select:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.1rem #5b49cf !important;
+          box-shadow: 0 0 0 0.1rem #5b49cf !important;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #0C0D36;
+}
+
+.b-20 {
+  border-radius: 20px;
+}
+
+.logo {
+  font-family: 'trans', serif;
+  font-size: 16px;
+}
+
+.navbar {
+  padding-top: 0 !important;
+  z-index: 2;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fff;
+          text-decoration-color: #fff;
+}
+
+.navbar .navbar-nav .nav-item .active {
+  color: #c10202 !important;
+  font-size: 22px !important;
+  font-weight: bold !important;
+}
+
+.btn:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem #3518f5 !important;
+          box-shadow: 0 0 0 0.2rem #3518f5 !important;
+}
+
+.btn-pry {
+  border: none;
+  padding: 8px 30px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c10202), color-stop(96%, #060d1d));
+  background: linear-gradient(to bottom, #c10202 0%, #060d1d 96%);
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 17px;
+}
+
+.btn-pry:hover {
+  -webkit-box-shadow: 0 7px 25px #c5c5c5;
+          box-shadow: 0 7px 25px #c5c5c5;
+}
+
+.btn-pry:active {
+  outline: 0;
+  -webkit-box-shadow: 0 2px 25px 0 #ff3f34;
+          box-shadow: 0 2px 25px 0 #ff3f34;
+}
+
+.btn-pro {
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: #5b49cf;
+  font-size: 16px;
+  font-weight: 500px;
+  border-radius: 20px;
+}
+
+.btn-pro:hover, .btn-pro:active, .btn-pro:focus, .btn-pro:visited {
+  background-color: #4b38c7;
+  color: #ffffff;
+}
+
+.btn-alt {
+  color: #a5a5a5;
+  background: #f1f1f1;
+  font-size: 16px;
+  font-weight: 500px;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+.btn-alt:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem #e9e9e9 !important;
+          box-shadow: 0 0 0 0.2rem #e9e9e9 !important;
+}
+
+.btn-alt:hover {
+  color: #a5a5a5;
+  background-color: #ece8e8;
+}
+
+#modalNavMobile .modal-content {
+  border-radius: 12px;
+  background: #34495e86;
+}
+
+#modalNavMobile .modal-content .close {
+  color: #fff;
+}
+
+#modalNavMobile .modal-content .navbar-nav .nav-item .nav-link {
+  color: #ecf0f1;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#modalNavMobile .modal-content .navbar-nav .nav-item .nav-link img {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+
+#modalNavMobile .modal-content .navbar-nav .nav-item .nav-link:hover {
+  color: #c10202;
+}
+
+#modalNavMobile .modal-content .navbar-nav .nav-item .active {
+  color: #c10202 !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.chat-box {
+  width: 70px;
+  height: 70px;
+  background: #FC427B;
+  border-radius: 50%;
+  color: #fff;
+  position: fixed !important;
+  right: 30px;
+  bottom: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1030;
+}
+
+.chat-box img {
+  height: 36px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.chat-box:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #dd3064;
+  -webkit-box-shadow: 10px 10px 44px 16px rgba(0, 0, 0, 0.26);
+          box-shadow: 10px 10px 44px 16px rgba(0, 0, 0, 0.26);
+  bottom: 60px;
+}
+
+footer {
+  background: #fff;
+  color: #000;
+}
+
+footer .container {
+  padding-top: 63px;
+  padding-bottom: 56px;
+}
+
+footer .container h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+footer .container p {
+  font-size: 18px;
+}
+
+footer .container .ic_email {
+  width: 30px;
+  cursor: pointer;
+}
+
+footer .container .ft-cont {
+  color: #000 !important;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer .container .ft-cont:hover {
+  text-decoration: underline;
+}
+
+footer .container input {
+  width: auto !important;
+  height: 57px !important;
+  border-radius: 20px 0 0 20px !important;
+}
+
+footer .container button {
+  width: auto;
+  height: 57px;
+  border-radius: 0 20px 20px 0;
+}
+
+footer .container .btn-dark {
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+}
+
+footer .container .sosmed a {
+  text-decoration: none;
+}
+
+footer .container .sosmed a img {
+  cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+  #home h1 {
+    margin-bottom: 170px;
+  }
+  #home .home-pendiri .nav-pills {
+    margin-top: 58px;
+  }
+  #home .home-pendiri .nav-pills .nav-item .nav-link {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  #home .home-pendiri .nav-pills .nav-item .nav-link img {
+    max-width: 56px !important;
+    height: auto !important;
+  }
+  #home .home-pendiri .nav-pills .nav-item .nav-link.active {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+    padding: 8px !important;
+  }
+  #home .home-pendiri .scroll-pendiri {
+    margin-top: 20px !important;
+  }
+  #member .section-tab-member .nav-pills {
+    margin-bottom: 0px !important;
+  }
+  #member .section-tab-member .nav-pills .nav-item .nav-link img {
+    max-height: 30px !important;
+  }
+  #member .section-tab-member .nav-pills .nav-item .nav-link.active {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+    padding: 8px 6px !important;
+  }
+  #member .section-tab-member .tab-content .tab-pane .tab-value {
+    padding: 24px !important;
+  }
+  #member .section-tab-member .tab-content .tab-pane .tab-title {
+    font-size: 18px !important;
+  }
+  #member .section-tab-member .tab-content .tab-pane .tab-sub {
+    font-size: 18px !important;
+  }
+  #activity .content-activity .img-header {
+    margin-top: 100px !important;
+  }
+  #activity .content-activity h1 {
+    margin-top: 12px !important;
+    margin-bottom: 23px !important;
+    font-size: 60px !important;
+  }
+  #activity .box-slider {
+    margin-top: 22px !important;
+  }
+  #news .h-news .col-lg-12 {
+    margin-top: -22px;
+  }
+  #news .content .artikel .thumbnail {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #news-detail .content .section-carousel .container-fluid .col-md-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .home-slider-video .splide .splide__arrows .splide__arrow--prev {
+    left: -50px !important;
+  }
+  .home-slider-video .splide .splide__arrows .splide__arrow--next {
+    right: -50px !important;
+  }
+  .agenda-3 .splide .splide__arrows .splide__arrow--prev {
+    left: -50px !important;
+  }
+  .agenda-3 .splide .splide__arrows .splide__arrow--next {
+    right: -50px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-benefit ul:nth-child(1) {
+    margin-top: 29px !important;
+  }
+  .home-benefit ul {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .home-slide #owl-carousel-home {
+    padding-bottom: 0 !important;
+  }
+  .home-slide #owl-carousel-home .owl-nav {
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+  }
+  .home-slide #owl-carousel-home .owl-nav button.owl-prev {
+    float: none !important;
+  }
+  .home-slide #owl-carousel-home .owl-nav button.owl-next {
+    float: none !important;
+  }
+  #member .hak {
+    display: block;
+    font-size: 12px;
+    padding: 15px 20px 15px 20px;
+  }
+  #member .content .level img {
+    display: none;
+  }
+  #member .content .level .title-1 {
+    margin-top: 50px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #owl-carousel-home {
+    padding-bottom: 70px;
+  }
+  #owl-carousel-home .owl-nav {
+    margin-top: -120px !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #member h1 {
+    margin-bottom: 170px;
+  }
+  #news .content .news {
+    padding-bottom: 40px !important;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 98%, 0% 100%) !important;
+            clip-path: polygon(0 0, 100% 0%, 100% 98%, 0% 100%) !important;
+  }
+}
+
+.lb-outerContainer {
+  border-radius: 20px !important;
+}
+
+.lb-image {
+  border-radius: 20px !important;
+}
+
+.lb-prev {
+  background: none !important;
+}
+
+.lb-next {
+  background: none !important;
+}
+
+.lb-close {
+  background: none !important;
+}
+
+.maserati #home header .header {
+  background: url("../images/home/bg-banner.jpg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  margin-top: -82.3px;
+  padding-bottom: -200px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.maserati #home header .header .hero {
+  padding-top: 100px;
+}
+
+.maserati #home header .header h1 {
+  font-family: 'trans', serif;
+  font-size: 40px;
+  text-shadow: 4px 4px solid #000;
+}
+
+.maserati #home header .header .img-pendiri {
+  background: #fff;
+  border-radius: 100%;
+  border: 4px solid #fff;
+}
+
+.maserati #home header .header .p-header {
+  font-size: 16px;
+}
+
+.maserati #home header .header .p-sub {
+  font-size: 12px;
+}
+
+.maserati #home header .header .carousel-indicators {
+  bottom: -10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.maserati #home header .header .carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+}
+
+.maserati #home .home-latar {
+  background: #030409;
+}
+
+.maserati #home .home-latar .img-latar {
+  margin-bottom: -80px;
+  margin-left: -37px;
+}
+
+.maserati #home .home-latar p {
+  font-size: 18px;
+  text-indent: 40px;
+}
+
+.maserati #home .home-latar p:first-child {
+  margin-top: 40px;
+}
+
+.maserati #home .home-latar p:last-child {
+  margin-top: 12px;
+}
+
+.maserati #home .home-benefit {
+  background: #fff;
+  color: #030409;
+}
+
+.maserati #home .home-benefit ul {
+  margin-top: 29px;
+  margin-bottom: 16px;
+}
+
+.maserati #home .home-benefit ul li {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.maserati #home .home-slide {
+  background: #030409;
+}
+
+.maserati #home .home-slide #owl-carousel-home .item {
+  width: 100%;
+  height: 230px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.maserati #home .home-slide #owl-carousel-home .item:hover .thumb, .maserati #home .home-slide #owl-carousel-home .item:focus .thumb {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #home .home-slide #owl-carousel-home .item img {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.maserati #home .home-slide #owl-carousel-home .owl-nav {
+  margin-top: -140px;
+  margin-bottom: 100px;
+}
+
+.maserati #home .home-slide #owl-carousel-home .owl-nav button.owl-prev {
+  margin-left: -22px;
+  float: left;
+  color: #000;
+  font-weight: 600;
+  background: #cacaca;
+  opacity: 0.66 !important;
+  padding: 0 14px !important;
+  border-radius: 100%;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.maserati #home .home-slide #owl-carousel-home .owl-nav button.owl-prev:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #home .home-slide #owl-carousel-home .owl-nav button.owl-prev:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), color-stop(96%, #008cc6)) !important;
+  background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+}
+
+.maserati #home .home-slide #owl-carousel-home .owl-nav button.owl-next {
+  margin-right: -22px;
+  float: right;
+  color: #000;
+  font-weight: 600;
+  background: #cacaca;
+  opacity: 0.66 !important;
+  padding: 0 14px !important;
+  border-radius: 100%;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.maserati #home .home-slide #owl-carousel-home .owl-nav button.owl-next:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #home .home-slide #owl-carousel-home .owl-nav button.owl-next:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), color-stop(96%, #008cc6)) !important;
+  background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+}
+
+.maserati #home .home-slide .bg-slider {
+  width: 100%;
+  margin-top: -40px;
+  margin-bottom: -21px;
+}
+
+.maserati #home .home-pendiri {
+  background: url("../images/home/bg-tab.png");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maserati #home .home-pendiri .nav-pills {
+  margin-top: 58px;
+}
+
+.maserati #home .home-pendiri .nav-pills .nav-item .nav-link {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maserati #home .home-pendiri .nav-pills .nav-item .nav-link img {
+  max-width: 120px;
+  height: auto;
+}
+
+.maserati #home .home-pendiri .nav-pills .nav-item .nav-link.active {
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.431);
+  padding: 0;
+  -webkit-box-shadow: 0 2px 25px 0  #fff !important;
+          box-shadow: 0 2px 25px 0  #fff !important;
+}
+
+.maserati #home .home-pendiri .nav-pills .nav-item .nav-induk .ic-tab-utama {
+  max-width: 170px;
+  height: auto;
+}
+
+.maserati #home .home-pendiri .nav-pills .nav-item .nav-induk.active {
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c10202), color-stop(96%, #060d1d));
+  background: linear-gradient(to bottom, #c10202 0%, #060d1d 96%);
+  padding: 6px;
+  -webkit-box-shadow: 0 2px 25px 0  #fff !important;
+          box-shadow: 0 2px 25px 0  #fff !important;
+}
+
+.maserati #home .home-pendiri .tab-mobile {
+  margin-top: 58px;
+}
+
+.maserati #home .home-pendiri .tab-mobile .nav-item .nav-link {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.maserati #home .home-pendiri .tab-mobile .nav-item .nav-link img {
+  max-width: 90px !important;
+  height: auto !important;
+}
+
+.maserati #home .home-pendiri .tab-mobile .nav-item .nav-link.active {
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.431);
+  padding: 0 !important;
+  -webkit-box-shadow: 0 2px 25px 0  #fff !important;
+          box-shadow: 0 2px 25px 0  #fff !important;
+}
+
+.maserati #home .home-pendiri .tab-mobile .nav-item .nav-induk .ic-tab-utama {
+  max-width: 120px !important;
+  height: auto !important;
+}
+
+.maserati #home .home-pendiri .tab-mobile .nav-item .nav-induk.active {
+  border-radius: 100% !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c10202), color-stop(96%, #060d1d)) !important;
+  background: linear-gradient(to bottom, #c10202 0%, #060d1d 96%) !important;
+  padding: 6px !important;
+  -webkit-box-shadow: 0 2px 25px 0  #fff !important;
+          box-shadow: 0 2px 25px 0  #fff !important;
+}
+
+.maserati #home .home-pendiri .scroll-pendiri {
+  margin-top: 58px;
+  margin-bottom: 50px;
+  height: 600px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.maserati #home .home-pendiri .scroll-pendiri p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.maserati #home .home-pendiri .scroll-pendiri ol li {
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.maserati #home .home-slider-video .splide .splide__arrows .splide__arrow--prev:active,
+.maserati #home .home-slider-video .splide .splide__arrows .splide__arrow--next:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), color-stop(96%, #008cc6)) !important;
+  background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+}
+
+.maserati #home .home-slider-video .container-fluid {
+  background: #000;
+}
+
+.maserati #home .home-slider-video .container-fluid .container {
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
+.maserati #home .home-slider-video .container-fluid .container #carousel-bottom iframe {
+  border-radius: 12px !important;
+}
+
+.maserati #member header {
+  background: url("../images/member/bg-banner.png");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  margin-top: -82.3px;
+}
+
+.maserati #member header h1 {
+  margin-top: 158px;
+  margin-bottom: 23px;
+  font-size: 60px;
+  font-family: 'trans';
+}
+
+.maserati #member header .hak {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 14px 40px 14px 40px;
+  color: #000;
+  border-radius: 30px;
+  background: #cacaca;
+}
+
+.maserati #member header .hak:hover {
+  background: #c5c5c5;
+  cursor: pointer;
+}
+
+.maserati #member header .hak:active {
+  outline: 0;
+  -webkit-box-shadow: 1px solid #c5c5c5;
+          box-shadow: 1px solid #c5c5c5;
+}
+
+.maserati #member .content {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c10202), color-stop(96%, #060d1d));
+  background: linear-gradient(to bottom, #c10202 0%, #060d1d 96%);
+  z-index: -1;
+  -webkit-box-shadow: 0 2px 100px 100px #c10202;
+          box-shadow: 0 2px 100px 100px #c10202;
+}
+
+.maserati #member .content .level img {
+  margin-bottom: 90px;
+  margin-right: 40px;
+  margin-top: 46px;
+}
+
+.maserati #member .content .level .h-level {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'trans', serif;
+}
+
+.maserati #member .content .level .title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'trans', serif;
+  margin-bottom: 20px;
+}
+
+.maserati #member .content .level .sub {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 57px;
+}
+
+.maserati #member .content .section-tab-bg img {
+  margin-top: -300px;
+  margin-bottom: -650px;
+}
+
+.maserati #member .content .section-tab-member .nav-pills {
+  margin-bottom: -60px;
+}
+
+.maserati #member .content .section-tab-member .nav-pills .nav-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maserati #member .content .section-tab-member .nav-pills .nav-item .nav-link {
+  background: none !important;
+}
+
+.maserati #member .content .section-tab-member .nav-pills .nav-item .nav-link img {
+  max-height: 90px;
+}
+
+.maserati #member .content .section-tab-member .nav-pills .nav-item .nav-link.active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-bottom: 4px solid #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c10202), color-stop(96%, #060d1d)) !important;
+  background: linear-gradient(to bottom, #c10202 0%, #060d1d 96%) !important;
+  border-radius: 100%;
+  padding: 12px 10px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 2px 10px 0 #fff;
+          box-shadow: 0 2px 10px 0 #fff;
+}
+
+.maserati #member .content .section-tab-member .tab-content {
+  border-radius: 47px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), to(#008cc6));
+  background: linear-gradient(to bottom, #060d1d, #008cc6);
+}
+
+.maserati #member .content .section-tab-member .tab-content .tab-pane {
+  padding: 18px;
+  border-radius: 27px;
+}
+
+.maserati #member .content .section-tab-member .tab-content .tab-pane .tab-value {
+  padding: 60px 40px 40px 40px;
+  border-radius: 27px;
+  -webkit-box-shadow: inset 0px 0px 25px 0px #fff;
+          box-shadow: inset 0px 0px 25px 0px #fff;
+}
+
+.maserati #member .content .section-tab-member .tab-content .tab-pane .tab-value p {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.maserati #member .content .section-tab-member .tab-content .tab-pane .tab-value ul li {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.maserati #member .content .section-tab-member .tab-content .tab-pane .tab-value ol li {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.maserati #member .section-daftar-manfaat h2 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'trans', serif;
+  margin-bottom: 30px;
+  margin-top: 115px;
+}
+
+.maserati #member .section-daftar-manfaat table {
+  margin-bottom: 90px;
+}
+
+.maserati #member .section-daftar-manfaat table thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.maserati #member .section-daftar-manfaat table thead tr th {
+  border: 2px solid #fff;
+  font-size: 22px;
+  font-weight: 300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), to(#008cc6));
+  background: linear-gradient(to bottom, #060d1d, #008cc6);
+  cursor: pointer;
+}
+
+.maserati #member .section-daftar-manfaat table thead tr th:first-child,
+.maserati #member .section-daftar-manfaat table thead tr th:last-child {
+  border-left: none;
+  border-right: none;
+}
+
+.maserati #member .section-daftar-manfaat table tbody tr {
+  border-right: none !important;
+  border-left: none !important;
+}
+
+.maserati #member .section-daftar-manfaat table tbody tr:hover {
+  background: #8e8e8f85;
+  cursor: pointer;
+}
+
+.maserati #member .section-daftar-manfaat table tbody tr td {
+  border: 2px solid #fff;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.maserati #member .section-daftar-manfaat table tbody tr td:first-child,
+.maserati #member .section-daftar-manfaat table tbody tr td:last-child {
+  border-left: none;
+  border-right: none;
+}
+
+.maserati #activity header {
+  background: url("../images/activity/bg-banner.png");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  margin-top: -82.3px;
+  padding-bottom: -200px;
+  padding-left: 0px;
+  padding-right: 0px;
+  z-index: 1;
+}
+
+.maserati #activity header h1 {
+  margin-top: 70vh !important;
+  font-size: 60px;
+  font-family: 'trans';
+}
+
+.maserati #activity header .hak {
+  margin-top: 23px;
+  margin-bottom: 86px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 14px 40px 14px 40px;
+  color: #000;
+  border-radius: 30px;
+  background: #cacaca;
+}
+
+.maserati #activity header .hak:hover {
+  background: #c5c5c5;
+  cursor: pointer;
+}
+
+.maserati #activity header .hak:active {
+  outline: 0;
+  -webkit-box-shadow: 1px solid #c5c5c5;
+          box-shadow: 1px solid #c5c5c5;
+}
+
+.maserati #activity .content {
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), color-stop(96%, #008cc6));
+  background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%);
+  -webkit-box-shadow: 0 0 100px 100px #060d1d;
+          box-shadow: 0 0 100px 100px #060d1d;
+}
+
+.maserati #activity .content .sunday h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.maserati #activity .content .sunday span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.maserati #activity .content .sunday p {
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 28px;
+  max-width: 100%;
+  max-height: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+}
+
+.maserati #activity .content .activity .title {
+  margin-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.maserati #activity .content .activity .title h2 {
+  border-radius: 45px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c10202), to(#060d1d));
+  background: linear-gradient(to bottom, #c10202, #060d1d);
+  font-size: 35px;
+  font-weight: bold;
+  padding: 20px 40px 20px 40px;
+  margin-bottom: 37px;
+}
+
+.maserati #activity .content .activity .title h2:hover {
+  -webkit-box-shadow: 0 2px 25px 0 #fff;
+          box-shadow: 0 2px 25px 0 #fff;
+}
+
+.maserati #activity .content .activity .card {
+  text-align: center;
+  background: transparent !important;
+  border-radius: 35px;
+  border: solid 3px #fff;
+  margin-bottom: 50px;
+}
+
+.maserati #activity .content .activity .card:hover {
+  background-color: #8e8e8f85 !important;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 7px 25px #8e8e8f85;
+          box-shadow: 0px 7px 25px #8e8e8f85;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.maserati #activity .content .activity .card .card-header {
+  border-bottom: none !important;
+  background: transparent !important;
+  padding: 30px 30px 0 30px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 0;
+}
+
+.maserati #activity .content .activity .card .card-body {
+  padding: 8px 30px 30px 30px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.maserati #activity .content .agenda {
+  background: #000;
+}
+
+.maserati #activity .content .agenda .agenda-1 .scroll-agenda {
+  margin-top: 84px;
+  max-height: 433px;
+  overflow-y: scroll;
+}
+
+.maserati #activity .content .agenda .agenda-1 .scroll-agenda .nav-pills .nav-item .nav-link {
+  background: none !important;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.maserati #activity .content .agenda .agenda-1 .scroll-agenda .nav-pills .nav-item .nav-link .media img {
+  height: 60px;
+  width: 60px;
+}
+
+.maserati #activity .content .agenda .agenda-1 .scroll-agenda .nav-pills .nav-item .nav-link .media .media-body p {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.maserati #activity .content .agenda .agenda-1 .scroll-agenda .nav-pills .nav-item .nav-link:hover, .maserati #activity .content .agenda .agenda-1 .scroll-agenda .nav-pills .nav-item .nav-link.active, .maserati #activity .content .agenda .agenda-1 .scroll-agenda .nav-pills .nav-item .nav-link:active {
+  border-radius: 12px !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), to(#008cc6)) !important;
+  background: linear-gradient(to bottom, #060d1d, #008cc6) !important;
+}
+
+.maserati #activity .content .agenda .agenda-1 .box-slider {
+  margin-top: 84px;
+  padding: 40px 30px 10px 30px;
+  border-radius: 27px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), to(#008cc6));
+  background: linear-gradient(to bottom, #060d1d, #008cc6);
+}
+
+.maserati #activity .content .agenda .agenda-1 .box-slider h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.maserati #activity .content .agenda .agenda-1 .box-slider p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.maserati #activity .content .agenda .agenda-1 .box-slider iframe, .maserati #activity .content .agenda .agenda-1 .box-slider img {
+  border-radius: 12px;
+}
+
+.maserati #activity .content .agenda .agenda-1 .box-slider:hover {
+  -webkit-box-shadow: 0 2px 25px 0 #fff;
+          box-shadow: 0 2px 25px 0 #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.maserati #activity .content .agenda .agenda-1 .box-slider .item {
+  width: 100%;
+  height: 190px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.maserati #activity .content .agenda .agenda-1 .box-slider .item:hover .thumb, .maserati #activity .content .agenda .agenda-1 .box-slider .item:focus .thumb {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.maserati #activity .content .agenda .agenda-1 .box-slider .item img {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.maserati #activity .content .agenda .agenda-1 hr {
+  margin-top: 84px;
+  margin-bottom: 45px;
+  border: 1px solid #fff !important;
+}
+
+.maserati #activity .content .agenda .agenda-2 h2 {
+  margin-bottom: 30px;
+}
+
+.maserati #activity .content .agenda .agenda-2 .box-slider .item {
+  width: 100%;
+  height: 230px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.maserati #activity .content .agenda .agenda-2 .box-slider .item:hover .thumb, .maserati #activity .content .agenda .agenda-2 .box-slider .item:focus .thumb {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #activity .content .agenda .agenda-2 .box-slider .item img {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.maserati #activity .content .agenda hr {
+  margin-top: 10px;
+  margin-bottom: 45px;
+  border: 1px solid #fff !important;
+}
+
+.maserati #activity .content .agenda .agenda-3 .splide .splide__arrows .splide__arrow--prev:active,
+.maserati #activity .content .agenda .agenda-3 .splide .splide__arrows .splide__arrow--next:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), color-stop(96%, #008cc6)) !important;
+  background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+}
+
+.maserati #activity .content .agenda .agenda-4 .container {
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
+.maserati #activity .content .agenda .agenda-4 .container iframe {
+  border-radius: 12px;
+}
+
+.maserati #news nav {
+  background: url("/project/images/news/bg-nav-alt.png") !important;
+  width: 100% !important;
+  height: auto !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  color: #fff !important;
+  z-index: 5 !important;
+}
+
+.maserati #news header.h-news .box-slider #slider-news .carousel-indicators {
+  bottom: 0px;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.maserati #news header.h-news .box-slider #slider-news .carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.maserati #news header.h-news .box-slider #slider-news .thumbnail {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.maserati #news header.h-news .box-slider #slider-news .thumbnail:hover .thumb, .maserati #news header.h-news .box-slider #slider-news .thumbnail:focus .thumb {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #news header.h-news .box-slider #slider-news .thumbnail .thumb {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.maserati #news header.h-news .box-slider #slider-news .news-content {
+  margin-top: -305px;
+  padding-top: 25px;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 2, 2, 0.68)), to(rgba(6, 13, 29, 0.36)));
+  background: linear-gradient(to bottom, rgba(193, 2, 2, 0.68), rgba(6, 13, 29, 0.36));
+}
+
+.maserati #news header.h-news .box-slider #slider-news .news-content h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.maserati #news header.h-news .box-slider #slider-news .news-content P {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.maserati #news header.h-news .box-slider #slider-news .news-content a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.maserati #news header.h-news .box-slider #slider-news .news-content a:hover {
+  text-decoration: underline;
+}
+
+.maserati #news .content .news {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), color-stop(96%, #008cc6));
+  background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%);
+  padding-bottom: 150px;
+}
+
+.maserati #news .content .news h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.maserati #news .content .news .card-news {
+  margin-bottom: 30px;
+}
+
+.maserati #news .content .news .card-news:hover {
+  text-decoration: none;
+}
+
+.maserati #news .content .news .card-news .thumbnail {
+  width: 100%;
+  height: 310px;
+  border-radius: 30px 30px 0px 0px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.maserati #news .content .news .card-news .thumbnail:hover .thumb, .maserati #news .content .news .card-news .thumbnail:focus .thumb {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #news .content .news .card-news .thumbnail .thumb {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.maserati #news .content .news .card-news .text {
+  color: #fff !important;
+  padding: 10px;
+}
+
+.maserati #news .content .news .card-news .text .date {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.maserati #news .content .news .card-news .text .title {
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  line-height: 45px;
+}
+
+.maserati #news .content .news .card-news .text .des {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 100%;
+  max-height: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.maserati #news .content .news .news-pagination .pagination {
+  float: right;
+}
+
+.maserati #news .content .artikel {
+  padding-top: 150px;
+  margin-top: -210px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c10202), color-stop(96%, #060d1d));
+  background: linear-gradient(to bottom, #c10202 0%, #060d1d 96%);
+}
+
+.maserati #news .content .artikel .card-artikel {
+  display: none !important;
+}
+
+.maserati #news .content .artikel h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 90px;
+}
+
+.maserati #news .content .artikel .thumbnail {
+  width: 100%;
+  height: 266px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px;
+}
+
+.maserati #news .content .artikel .thumbnail:hover .thumb, .maserati #news .content .artikel .thumbnail:focus .thumb {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #news .content .artikel .thumbnail .thumb {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.maserati #news .content .artikel .card-artikel {
+  text-decoration: none;
+  color: #fff;
+}
+
+.maserati #news .content .artikel .card-artikel .title {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.maserati #news .content .artikel .card-artikel .sub {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.maserati #news .content .artikel .card-artikel hr {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  border: 1px solid #fff !important;
+}
+
+.maserati #news .content .artikel .btn-artikel {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 4px 20px 4px 20px;
+  background: transparent;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.maserati #news .content .artikel .btn-artikel:hover {
+  background: #c5c5c5;
+  color: #000;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.maserati #news-detail .content .section-header {
+  background: url("/project/images/banner-alt.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  margin-top: -82.3px;
+  z-index: 1;
+}
+
+.maserati #news-detail .content .section-header .title {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 115px;
+  margin-bottom: 16px;
+}
+
+.maserati #news-detail .content .section-header .sub {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.maserati #news-detail .content .section-content .des {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.maserati #news-detail .content .section-carousel {
+  background: linear-gradient(178deg, #c10202 5%, #060d1d 91%);
+}
+
+.maserati #news-detail .content .section-carousel .owl-carousel .owl-nav {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.maserati #news-detail .content .section-carousel .owl-carousel .owl-nav button.owl-prev {
+  color: #000;
+  font-weight: 600;
+  background: #cacaca;
+  opacity: 0.66 !important;
+  padding: 0 14px !important;
+  border-radius: 100%;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.maserati #news-detail .content .section-carousel .owl-carousel .owl-nav button.owl-prev:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #news-detail .content .section-carousel .owl-carousel .owl-nav button.owl-prev:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), color-stop(96%, #008cc6)) !important;
+  background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+}
+
+.maserati #news-detail .content .section-carousel .owl-carousel .owl-nav button.owl-next {
+  color: #000;
+  font-weight: 600;
+  background: #cacaca;
+  opacity: 0.66 !important;
+  padding: 0 14px !important;
+  border-radius: 100%;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.maserati #news-detail .content .section-carousel .owl-carousel .owl-nav button.owl-next:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #news-detail .content .section-carousel .owl-carousel .owl-nav button.owl-next:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#060d1d), color-stop(96%, #008cc6)) !important;
+  background: linear-gradient(to bottom, #060d1d 0%, #008cc6 96%) !important;
+}
+
+.maserati #news-detail .content .section-carousel .card-news {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.maserati #news-detail .content .section-carousel .card-news:hover {
+  text-decoration: none;
+}
+
+.maserati #news-detail .content .section-carousel .card-news .thumbnail {
+  width: 100%;
+  height: 204px;
+  border-radius: 30px 30px 0px 0px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.maserati #news-detail .content .section-carousel .card-news .thumbnail:hover .thumb, .maserati #news-detail .content .section-carousel .card-news .thumbnail:focus .thumb {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.maserati #news-detail .content .section-carousel .card-news .thumbnail .thumb {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.maserati #news-detail .content .section-carousel .card-news .text {
+  color: #fff !important;
+  padding: 10px;
+}
+
+.maserati #news-detail .content .section-carousel .card-news .text .date {
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.maserati #news-detail .content .section-carousel .card-news .text .title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.maserati #news-detail .content .section-carousel .card-news .text .des {
+  font-size: 12px !important;
+  font-weight: 400;
+  line-height: 1.1;
+  max-width: 100%;
+  max-height: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.auth {
+  min-height: 100vh;
+  background: #f7faff;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.auth .sign-ilus {
+  border-radius: 0px 40px 0px 40px;
+}
+
+.auth .content-auth .my-form-auth {
+  margin-top: 36px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.auth img.sign-logo {
+  margin-left: -2px;
+  margin-bottom: 30px;
+}
+
+.auth .title-signin {
+  color: #0C0D36;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.auth .title-forgot-password {
+  margin-top: 20px;
+  font-weight: 300;
+  color: #34364a;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.auth input {
+  margin-bottom: 16px !important;
+}
+
+.auth .text-link {
+  color: #999aa4 !important;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.auth .buttom-sign {
+  margin-top: 30px;
+}
+
+.auth .buttom-sign .btn-pro {
+  margin-bottom: 16px !important;
+}
+
+.auth .buttom-sign .bt-auth {
+  display: block;
+  width: 100%;
+}
+
+.auth .btn-sukses {
+  min-width: 250px;
+  margin-top: 60px;
+}
+
+#success h3 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  color: #525252;
+}
+
+#success p {
+  min-width: 300px !important;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  text-align: center;
+  color: #525252;
+  margin-bottom: 0px;
+}
+/*# sourceMappingURL=main.css.map */

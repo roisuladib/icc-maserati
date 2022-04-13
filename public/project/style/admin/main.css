@@ -1,0 +1,172 @@
+table {
+  color: #0c0d36 !important;
+}
+
+table tr:hover, table tr:active {
+  color: #0c0d36 !important;
+}
+
+body {
+  color: #0c0d36 !important;
+}
+
+.b-20 {
+  border-radius: 20px;
+}
+
+.b-12 {
+  border-radius: 12px;
+}
+
+.toas-av {
+  background: #009432 !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  border-radius: 20px !important;
+}
+
+.toas-un {
+  background: #EA2027 !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  border-radius: 20px !important;
+}
+
+input, select {
+  color: #0C0D36 !important;
+  border: 1px solid #f4f2ff !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  background-color: #f4f2ff !important;
+  height: 45px !important;
+  border-radius: 20px !important;
+}
+
+input:focus, select:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.1rem #5b49cf !important;
+          box-shadow: 0 0 0 0.1rem #5b49cf !important;
+}
+
+textarea {
+  color: #0C0D36 !important;
+  border: 1px solid #f4f2ff !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  background-color: #f4f2ff !important;
+  border-radius: 20px !important;
+}
+
+textarea:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.1rem #5b49cf !important;
+          box-shadow: 0 0 0 0.1rem #5b49cf !important;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #0C0D36;
+}
+
+/* Btn */
+.btn:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem #3518f5 !important;
+  box-shadow: 0 0 0 0.2rem #3518f5 !important;
+}
+
+.btn-pro {
+  padding: 8px 30px;
+  color: #ffffff;
+  background-color: #5b49cf;
+  font-size: 16px;
+  font-weight: 500px;
+  border-radius: 20px;
+}
+
+.btn-pro:hover {
+  background-color: #4b38c7;
+  color: #ffffff;
+}
+
+ul#accordionSidebar {
+  background-color: #5b49cf !important;
+}
+
+ul#accordionSidebar .sidebar-brand-text {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ul#accordionSidebar li a span {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+ul#accordionSidebar li .collapse a {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.bg-collapse {
+  background-color: #f4f2ff !important;
+}
+
+.ck-toolbar {
+  border-radius: 20px 20px 0 0 !important;
+}
+
+.ck-content {
+  border-radius: 0 0 20px 20px !important;
+  background-color: #f4f2ff !important;
+}
+
+#crudTable_wrapper .dataTables_paginate .pagination .active a.page-link {
+  background-color: #5b49cf !important;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 300px !important;
+  }
+}
+
+.content-admin .heading .title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000 !important;
+  margin-bottom: 2px;
+}
+
+.content-admin .heading .sub {
+  margin-bottom: 0;
+}
+
+.content-admin #data .content .card {
+  margin-top: 50px;
+  border: none;
+}
+
+.content-admin #data .content .card .card-body {
+  padding: 0;
+}
+
+.content-admin #formInput .content .card {
+  margin-top: 50px;
+  border: none;
+}
+
+.content-admin #formInput .content .card .card-body {
+  padding: 30px;
+}
+
+.thumb-container .delete-thumb {
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */

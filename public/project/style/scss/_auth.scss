@@ -1,0 +1,74 @@
+.auth {   
+   min-height: 100vh;
+   background: #f7faff; 
+   padding-top: 90px;     
+   padding-bottom: 90px;    
+   .sign-ilus {
+      border-radius: 0px 40px 0px 40px;
+   } 
+   .content-auth {            
+      .my-form-auth {
+         margin-top: 36px; 
+         background-color: #ffffff;
+         padding: 30px;         
+      }
+   }
+   img.sign-logo {
+      margin-left: -2px;
+      margin-bottom: 30px;
+   }
+   .title-signin {    
+      color: #0C0D36;       
+      font-weight: 700;
+      font-size: 32px;  
+      margin-bottom: 0;                
+   }
+   .title-forgot-password {
+      margin-top: 20px;
+      font-weight: 300;
+      color: rgb(52,54,74);
+      font-size: 16px;
+      margin-bottom: 0; 
+   }
+   input {
+      margin-bottom: 16px !important;
+   }   
+   .text-link {
+      color: rgb(153,154,164) !important;
+      font-weight: 400;
+      font-size: 16px;
+   }
+   .buttom-sign {
+      margin-top: 30px;
+      .btn-pro {      
+         margin-bottom: 16px !important;      
+      }
+      .bt-auth {
+         display: block;
+         width: 100%;
+      }
+   }
+   .btn-sukses {
+      min-width: 250px;
+      margin-top: 60px;      
+   }
+
+}
+#success {
+   h3 {    
+      margin-top: 40px;
+      margin-bottom: 16px;    
+      font-weight: 500;
+      font-size: 32px;
+      color: #525252;
+   }
+   p {
+      min-width: 300px !important;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 180%;
+      text-align: center;
+      color: #525252;
+      margin-bottom: 0px;
+   }
+}
